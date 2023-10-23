@@ -96,7 +96,7 @@ def run_ui(model, tokenizer, is_chat_model, model_type):
       msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(bot, chatbot, chatbot)
       clear.click(lambda: None, None, chatbot, queue=False)
   demo.queue()
-  demo.launch(share=True, debug=True)
+  demo.launch(share=True, debug=False)
 
 def main(model_name=None, file_name=None):
     assert model_name is not None, "model_name argument is missing."
